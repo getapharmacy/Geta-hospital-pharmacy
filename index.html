@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Business</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #007bff;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Centering the image */
+        .center-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Design Credit Styling */
+        .design-credit {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .design-credit .icon {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .design-credit:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pharmacy Department</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <img src="logo bst (2).jpg" width="100">
+        <h1>Welcome to Geta Hospital Pharmacy</h1>
+        <p>Your trusted pharmacy for quality healthcare products.</p>
+    </section>
+    
+    <section id="team" class="container my-5">
+        <h2 class="text-center">Our Pharmacist Team</h2>
+        <div class="row text-center">
+            <div class="col-md-4 team-member">
+                <img src="pic ganga.jpg" width="120">
+                <h4>Gangadhar Yadav</h4>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="pic suren.jpg" width="120">
+                <h4>Surendra Bhatta</h4>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="kkh.jpg" width="120">
+                <h4>Khagendra Joshi</h4>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="pic bst.jpg" width="120">
+                <h4>Basant Ghimire</h4>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="pic naren.jpg" width="120">
+                <h4>Narendra Kunwar</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section id="role" class="container my-5">
+        <h2 class="text-center">Role of Pharmacist in Hospital</h2>
+        <ul>
+            <li><strong>Management</strong> – Dispense and manage drug inventory.</li>
+            <li><strong>Patient Safety</strong> – Prevent medication errors and ensure proper dosage.</li>
+            <li><strong>Clinical Consultation</strong> – Advise doctors & nurses on drug therapy.</li>
+            <li><strong>Drug Information</strong> – Provide updates on new medicines & interactions.</li>
+            <li><strong>Therapeutic Monitoring</strong> – Monitor patient response to treatments.</li>
+            <li><strong>Patient Education</strong> – Counsel patients on medication use.</li>
+            <li><strong>Hospital Policy Development</strong> – Assist in formulary management.</li>
+            <li><strong>Emergency Care Support</strong> – Provide quick drug solutions in emergencies.</li>
+            <li><strong>Research & Training</strong> – Participate in clinical trials & staff education.</li>
+        </ul>
+    </section>
+
+    <!-- Image after the Role of Pharmacist section -->
+    <img src="pic group.jpg" width="350" class="center-image" alt="Group Image">
+    
+    <section id="products" class="container my-5">
+        <h2 class="text-center">Medicine is Available for</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card text-center">
+                    <h4>Antidiabetic Drugs</h4>
+                    <p>Diabetic care.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card text-center">
+                    <h4>Antihypertensive Drugs</h4>
+                    <p>Blood pressure management.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card text-center">
+                    <h4>Pain Relief</h4>
+                    <p>Effective for headaches and muscle pain.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card text-center">
+                    <h4>Antibiotics</h4>
+                    <p>For bacterial infections and quick recovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="message">
+            Your health is our priority. Feel free to ask our pharmacist for guidance on medications and wellness.
+        </p>
+        <p class="contact">
+            📞 Contact us: <a href="tel:+9779822886359">+977 9822886359 Geta-5,kailali</a>
+        </p>
+        
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <div class="design-credit">
+        webside is Designed by <span class="icon">BetaGhimi13 [try webside]</span>
+    </div>
+    
+    <footer class="text-center bg-light py-3">
+        <p>&copy; 2025 Geta Hospital Pharmacy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
