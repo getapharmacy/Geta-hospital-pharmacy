@@ -1,26 +1,17 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Google Site Verification -->
-        <meta name="google-site-verification" content="nMUV-XBX-mppibLnqU0Mxu1Wnn9v4AtBfTXc7L8YqWs" />
-        <head>
-            <link rel="preload" href="favicon.png" as="image">
-        <link rel="icon" type="image/png" href="favicon.png">
-        <title>Geta Hospital Pharmacy</title>
-            <meta rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-            <link rel="icon" type="image/png" href="favicon.png">
-            <link rel="preload" href="favicon.ico" as="image">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-          </head>
-    </head>
-<body>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacy department</title>
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="nMUV-XBX-mppibLnqU0Mxu1Wnn9v4AtBfTXc7L8YqWs" />
+    <link rel="preload" href="favicon.png" as="image">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Geta Hospital Pharmacy</title>
+    <meta rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preload" href="favicon.ico" as="image">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,6 +42,7 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            max-width: 100%; /* Ensure images scale down on mobile */
         }
 
         /* Centering the image */
@@ -58,6 +50,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            max-width: 100%; /* Responsive scaling */
         }
 
         /* Design Credit Styling */
@@ -93,6 +86,29 @@
             margin-top: 50px;
         }
 
+        /* Responsive Image Fix */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjust Photo Gallery Images */
+        #Photos img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media Query for Mobile */
+        @media (max-width: 768px) {
+            .team-member img {
+                width: 100px; /* Smaller on mobile */
+                height: 100px;
+            }
+            .design-credit {
+                font-size: 12px; /* Smaller text on mobile */
+                padding: 5px 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -114,250 +130,189 @@
             </div>
         </div>
     </nav>
-</body>
 
-    
     <section class="hero">
         <header style="display: flex; align-items: center; justify-content: center; position: relative;">
-            <!-- Existing Image & Text (Centered) -->
             <img src="favicon.png" alt="Logo" style="height: 50px; margin-right: 10px;">
             <h2 style="display: inline-block; font-size: 16px;">
                 नेपाल सरकार स्वास्थ्य तथा जनसंख्या मन्त्रालय
             </h2>
         </header>
-        
-        
         <h1>Welcome to Geta Hospital Pharmacy</h1>
         <p>Your trusted pharmacy for quality healthcare products.</p>
     </section>
 
-    <img src="getamedical.jpg" alt="Image" style="max-width: auto; height: auto; display: block; margin: 50px auto;">
+    <img src="getamedical.jpg" alt="Image" style="display: block; margin: 50px auto;">
 
     <h5 align="center">
-    <a href="https://getahospital.gov.np" target="blank">
-        CLICK here to visit official GETA HOSPITAL webside</a>
-        </h5>
+        <a href="https://getahospital.gov.np" target="_blank">CLICK here to visit official GETA HOSPITAL website</a>
+    </h5>
+
     <section id="team" class="container my-5">
         <h2 class="text-center">Our Pharmacist Team In Geta Hospital Pharmacy</h2>
         <div class="row text-center">
-            <div class="col-md-4 team-member">
-                <img src="pic_ganga.png" width="35">
+            <div class="col-12 col-md-4 team-member">
+                <img src="pic_ganga.png" alt="Gangadhar Yadav">
                 <h4>Gangadhar Yadav</h4>
             </div>
-            <div class="col-md-4 team-member">
-                <img src="pic_suren.png" width="35">
+            <div class="col-12 col-md-4 team-member">
+                <img src="pic_suren.png" alt="Surendra Bhatta">
                 <h4>Surendra Bhatta</h4>
             </div>
-            <div class="col-md-4 team-member">
-                <img src="kkh.png" width="35">
+            <div class="col-12 col-md-4 team-member">
+                <img src="kkh.png" alt="Khagendra Joshi">
                 <h4>Khagendra Joshi</h4>
             </div>
-            <div class="col-md-4 team-member">
-                <img src="pic_bst.jpg" width="35">
+            <div class="col-12 col-md-4 team-member">
+                <img src="pic_bst.jpg" alt="Basant Ghimire">
                 <h4>Basant Ghimire</h4>
             </div>
-            <div class="col-md-4 team-member">
-                <img src="pic_naren.jpg" width="35">
+            <div class="col-12 col-md-4 team-member">
+                <img src="pic_naren.jpg" alt="Narendra Kunwar">
                 <h4>Narendra Kunwar</h4>
             </div>
         </div>
     </section>
-    
+
     <section id="services" class="container my-5">
         <h2 class="text-center">Medicine is Available for</h2>
         <div class="row">
             <section id="products">
-            <div class="col-md-3">
-                <div class="product-card text-center" style="background-color: #ffcccb; padding: 20px; border-radius: 10px;">
-                    <h4>Antidiabetic Drugs</h4>
-                    <p>Diabetic care.</p>
+                <div class="col-12 col-md-3">
+                    <div class="product-card text-center" style="background-color: #ffcccb; padding: 20px; border-radius: 10px;">
+                        <h4>Antidiabetic Drugs</h4>
+                        <p>Diabetic care.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-card text-center" style="background-color: #ffeb3b; padding: 20px; border-radius: 10px;">
-                    <h4>Antihypertensive Drugs</h4>
-                    <p>Blood pressure management.</p>
+                <div class="col-12 col-md-3">
+                    <div class="product-card text-center" style="background-color: #ffeb3b; padding: 20px; border-radius: 10px;">
+                        <h4>Antihypertensive Drugs</h4>
+                        <p>Blood pressure management.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-card text-center" style="background-color: #8bc34a; padding: 20px; border-radius: 10px;">
-                    <h4>NSAID and OTC drugs</h4>
-                    <p>Effective for headaches,muscle pain and fever.</p>
+                <div class="col-12 col-md-3">
+                    <div class="product-card text-center" style="background-color: #8bc34a; padding: 20px; border-radius: 10px;">
+                        <h4>NSAID and OTC drugs</h4>
+                        <p>Effective for headaches, muscle pain and fever.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-card text-center" style="background-color: #2196f3; padding: 20px; border-radius: 10px;">
-                    <h4>Antibiotics</h4>
-                    <p>For bacterial infections and quick recovery.</p>
+                <div class="col-12 col-md-3">
+                    <div class="product-card text-center" style="background-color: #2196f3; padding: 20px; border-radius: 10px;">
+                        <h4>Antibiotics</h4>
+                        <p>For bacterial infections and quick recovery.</p>
+                    </div>
                 </div>
-
-                    <section id="patient-instructions" class="container my-5">
-                        <h2 class="text-center">📌 Instructions for Patients Using Hospital Pharmacy 🏥💊</h2>
-                    
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3 class="text-success">✅ What Patients Should Do:</h3>
-                                <ul>
-                                    <li><strong>Follow Your Prescription</strong> – Take medicines exactly as directed by your doctor.</li>
-                                    <li><strong>Ask Questions</strong> – If unsure about dosage, side effects, or interactions, consult the pharmacist.</li>
-                                    <li><strong>Store Medicines Properly</strong> – Keep in a cool, dry place and away from children.</li>
-                                    <li><strong>Complete Your Course</strong> – Especially for antibiotics, even if you feel better.</li>
-                                    <li><strong>Bring Your Prescription & Medical History</strong> – Helps ensure safe and effective treatment.</li>
-                                    <li><strong>Follow Dosage Timing</strong> – Take medicines at the recommended intervals for best results.</li>
-                                    <li><strong>Check Expiry Dates</strong> – Do not use expired medicines.</li>
-                                </ul>
-                            </div>
-                    
-                            <div class="col-md-6">
-                                <h3 class="text-danger">❌ What Patients Should NOT Do:</h3>
-                                <ul>
-                                    <li><strong>Do Not Self-Medicate</strong> – Avoid taking medicines without a doctor's consultation.</li>
-                                    <li><strong>Do Not Share Medications</strong> – Your prescription is meant only for you.</li>
-                                    <li><strong>Do Not Skip or Double Dose</strong> – If you miss a dose, consult your pharmacist before adjusting.</li>
-                                    <li><strong>Do Not Mix Medicines Without Advice</strong> – Some drugs can cause harmful interactions.</li>
-                                    <li><strong>Do Not Store Medicines in Extreme Conditions</strong> – Avoid heat, moisture, and direct sunlight.</li>
-                                    <li><strong>Do Not Delay Seeking Medical Help</strong> – If you experience side effects, visit a doctor immediately.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    
-                        <p class="text-center mt-4">
-                            💬 <strong>Need help?</strong> Ask our <strong>pharmacists</strong> for expert guidance anytime! 📞
-                        </p>
-                    </section>
-                    
-                </div>
-            </div>
-        </div>
-        <section id="role" class="container my-5">
-            <h2 class="text-center">Role of Pharmacist in Hospital</h2>
-            <ul>
-                <li><strong>Management</strong> – Dispense and manage drug inventory.</li>
-                <li><strong>Patient Safety</strong> – Prevent medication errors and ensure proper dosage.</li>
-                <li><strong>Clinical Consultation</strong> – Advise doctors & nurses on drug therapy.</li>
-                <li><strong>Drug Information</strong> – Provide updates on new medicines & interactions.</li>
-                <li><strong>Therapeutic Monitoring</strong> – Monitor patient response to treatments.</li>
-                <li><strong>Patient Education</strong> – Counsel patients on medication use.</li>
-                <li><strong>Hospital Policy Development</strong> – Assist in formulary management.</li>
-                <li><strong>Emergency Care Support</strong> – Provide quick drug solutions in emergencies.</li>
-                <li><strong>Research & Training</strong> – Participate in clinical trials & staff education.</li>
-            </ul>
-            <!-- Image after the Role of Pharmacist section -->
-    <img src="pic_group.png" width="350" class="center-image" alt="Group Image">
-        </section>
-    </section>
-        <section id="contact" class="container my-5" style="background-color: #f0f7ff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <h2 class="text-center" style="color: #0056b3; font-weight: bold;">Contact Us</h2>
-            <p class="message" style="color: #333; text-align: center; font-size: 1.1em;">
-                Your health is our priority. Feel free to contact us for any queries related to medications, prescriptions, or health advice.
-            </p>
-            <p class="contact" style="color: #007bff; text-align: center; font-size: 1.1em;">
-                📞 Contact us: <a href="tel:+9779822886359" style="color: #0056b3; text-decoration: none; font-weight: bold;">+977 9822886359</a>
-            </p>
-            <p class="contact" style="color: #007bff; text-align: center; font-size: 1.1em;">
-                ✉️ Email us: <a href="mailto:getapharmacy5@gmail.com" style="color: #0056b3; text-decoration: none; font-weight: bold;">getapharmacy5@gmail.com</a>
-            </p>
-        </section>
-
-            <section id="location" class="container my-5">
-                <h2 class="text-center">📍 Our Location</h2>
-                <p class="text-center">We are located at Godawari municipality-5, Kailali,Sudurpaschim, Nepal. You can use the map below to find our exact location.</p>
-            
-                <div class="text-center">
-                    <!-- Google Maps Embed -->
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55954.759162781855!2d80.52360449804858!3d28.774115284413146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a19397f49cc7bf%3A0x580fa0b981149460!2sGeta%2C%2010900!5e0!3m2!1sen!2snp!4v1740987689974!5m2!1sen!2snp" 
-                        width="100%" 
-                        height="400" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            
-                <p class="text-center mt-4" style="color: #0056b3; background-color: #f0f7ff; padding: 10px; border-radius: 5px; font-weight: bold;">Visit us for trusted healthcare services and medications at our pharmacy.</p>
-
             </section>
-            
-                </div>
-            
-                <p class="text-center mt-4">You can find us easily using the map above. Feel free to visit or contact us for any inquiries about medications or services.</p>
-            </section>
-            
 
-            <section id="Photos" class="container my-5">
-                <h2 class="text-center" style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 5px; display: inline-block;">Photo Gallery</h2>
+            <section id="patient-instructions" class="container my-5">
+                <h2 class="text-center">📌 Instructions for Patients Using Hospital Pharmacy 🏥💊</h2>
                 <div class="row">
-                    <!-- Row 1 -->
-                    <div class="col-6 col-md-6 mb-3">
-                        <img src="pic_counter.jpg" alt="Photo 1" class="img-fluid" style="max-width: 200px; height: auto;">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-success">✅ What Patients Should Do:</h3>
+                        <ul>
+                            <li><strong>Follow Your Prescription</strong> – Take medicines exactly as directed by your doctor.</li>
+                            <li><strong>Ask Questions</strong> – If unsure about dosage, side effects, or interactions, consult the pharmacist.</li>
+                            <li><strong>Store Medicines Properly</strong> – Keep in a cool, dry place and away from children.</li>
+                            <li><strong>Complete Your Course</strong> – Especially for antibiotics, even if you feel better.</li>
+                            <li><strong>Bring Your Prescription & Medical History</strong> – Helps ensure safe and effective treatment.</li>
+                            <li><strong>Follow Dosage Timing</strong> – Take medicines at the recommended intervals for best results.</li>
+                            <li><strong>Check Expiry Dates</strong> – Do not use expired medicines.</li>
+                        </ul>
                     </div>
-                    <!-- Row 2 -->
-                    <div class="col-6 col-md-6 mb-3">
-                        <img src="pic_rack.jpg" alt="Photo 2" class="img-fluid" style="max-width: 200px; height: auto;">
-                    </div>
-                    <!-- Row 3 -->
-                    <div class="col-6 col-md-6 mb-3">
-                        <img src="pic_longcounter.jpg" alt="Photo 3" class="img-fluid" style="max-width: 200px; height: auto;">
-                    </div>
-                    <!-- Row 4 -->
-                        <img src="pic_veryfar.jpg" alt="Photo 4" class="img-fluid" style="max-width: 200px; height: auto;">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-danger">❌ What Patients Should NOT Do:</h3>
+                        <ul>
+                            <li><strong>Do Not Self-Medicate</strong> – Avoid taking medicines without a doctor's consultation.</li>
+                            <li><strong>Do Not Share Medications</strong> – Your prescription is meant only for you.</li>
+                            <li><strong>Do Not Skip or Double Dose</strong> – If you miss a dose, consult your pharmacist before adjusting.</li>
+                            <li><strong>Do Not Mix Medicines Without Advice</strong> – Some drugs can cause harmful interactions.</li>
+                            <li><strong>Do Not Store Medicines in Extreme Conditions</strong> – Avoid heat, moisture, and direct sunlight.</li>
+                            <li><strong>Do Not Delay Seeking Medical Help</strong> – If you experience side effects, visit a doctor immediately.</li>
+                        </ul>
                     </div>
                 </div>
+                <p class="text-center mt-4">
+                    💬 <strong>Need help?</strong> Ask our <strong>pharmacists</strong> for expert guidance anytime! 📞
+                </p>
             </section>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Geta Hospital Pharmacy</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-            }
-    
-            /* Design Credit Styling */
-            .design-credit {
-                position: fixed;
-                bottom: 10px; /* Position it at the bottom of the screen */
-                right: 10px; /* Position it on the right side */
-                font-size: 10px; /* Smaller font size */
-                color: #ffffff; /* White text for visibility */
-                background-color: rgba(0, 0, 0, 0.7); /* Slight transparent background */
-                padding: 5px 10px; /* Reduced padding */
-                border-radius: 5px; /* Rounded corners */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-                font-weight: normal; /* Lighter text weight */
-                transition: all 0.3s ease-in-out;
-            }
-    
-            .design-credit .icon {
-                color: #fff; /* Ensures the icon is white */
-                text-decoration: underline; /* Underline for emphasis */
-            }
-    
-            .design-credit:hover {
-                background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
-                transform: translateY(-2px); /* Slight lift effect */
-                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Your page content goes here -->
-    
-        <!-- Design Credit at the bottom-right -->
-        <div class="design-credit">
-            This is not an official website. It is designed by <span class="icon">Beta13Ghimi</span>
+            <section id="role" class="container my-5">
+                <h2 class="text-center">Role of Pharmacist in Hospital</h2>
+                <ul>
+                    <li><strong>Management</strong> – Dispense and manage drug inventory.</li>
+                    <li><strong>Patient Safety</strong> – Prevent medication errors and ensure proper dosage.</li>
+                    <li><strong>Clinical Consultation</strong> – Advise doctors & nurses on drug therapy.</li>
+                    <li><strong>Drug Information</strong> – Provide updates on new medicines & interactions.</li>
+                    <li><strong>Therapeutic Monitoring</strong> – Monitor patient response to treatments.</li>
+                    <li><strong>Patient Education</strong> – Counsel patients on medication use.</li>
+                    <li><strong>Hospital Policy Development</strong> – Assist in formulary management.</li>
+                    <li><strong>Emergency Care Support</strong> – Provide quick drug solutions in emergencies.</li>
+                    <li><strong>Research & Training</strong> – Participate in clinical trials & staff education.</li>
+                </ul>
+                <img src="pic_group.png" class="center-image" alt="Group Image">
+            </section>
         </div>
-    </body>
-    </html>
-    
-    
+    </section>
+
+    <section id="contact" class="container my-5" style="background-color: #f0f7ff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 class="text-center" style="color: #0056b3; font-weight: bold;">Contact Us</h2>
+        <p class="message" style="color: #333; text-align: center; font-size: 1.1em;">
+            Your health is our priority. Feel free to contact us for any queries related to medications, prescriptions, or health advice.
+        </p>
+        <p class="contact" style="color: #007bff; text-align: center; font-size: 1.1em;">
+            📞 Contact us: <a href="tel:+9779822886359" style="color: #0056b3; text-decoration: none; font-weight: bold;">+977 9822886359</a>
+        </p>
+        <p class="contact" style="color: #007bff; text-align: center; font-size: 1.1em;">
+            ✉️ Email us: <a href="mailto:getapharmacy5@gmail.com" style="color: #0056b3; text-decoration: none; font-weight: bold;">getapharmacy5@gmail.com</a>
+        </p>
+    </section>
+
+    <section id="location" class="container my-5">
+        <h2 class="text-center">📍 Our Location</h2>
+        <p class="text-center">We are located at Godawari municipality-5, Kailali, Sudurpaschim, Nepal. You can use the map below to find our exact location.</p>
+        <div class="text-center">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55954.759162781855!2d80.52360449804858!3d28.774115284413146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a19397f49cc7bf%3A0x580fa0b981149460!2sGeta%2C%2010900!5e0!3m2!1sen!2snp!4v1740987689974!5m2!1sen!2snp" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <p class="text-center mt-4" style="color: #0056b3; background-color: #f0f7ff; padding: 10px; border-radius: 5px; font-weight: bold;">Visit us for trusted healthcare services and medications at our pharmacy.</p>
+        <p class="text-center mt-4">You can find us easily using the map above. Feel free to visit or contact us for any inquiries about medications or services.</p>
+    </section>
+
+    <section id="Photos" class="container my-5">
+        <h2 class="text-center" style="background-color: #f0f0f0; padding: 10px 20px; border-radius: 5px; display: inline-block;">Photo Gallery</h2>
+        <div class="row">
+            <div class="col-6 col-md-6 mb-3">
+                <img src="pic_counter.jpg" alt="Photo 1" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-6 mb-3">
+                <img src="pic_rack.jpg" alt="Photo 2" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-6 mb-3">
+                <img src="pic_longcounter.jpg" alt="Photo 3" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-6 mb-3">
+                <img src="pic_veryfar.jpg" alt="Photo 4" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <div class="design-credit">
+        This is not an official website. It is designed by <span class="icon">Beta13Ghimi</span>
+    </div>
+
     <footer class="text-center bg-light py-3">
-        <img src="favicon.png" width="70">    <p>© 2025 Geta Hospital Pharmacy. All Rights Reserved.</p>
+        <img src="favicon.png" width="70" alt="Footer Logo">
+        <p>© 2025 Geta Hospital Pharmacy. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
