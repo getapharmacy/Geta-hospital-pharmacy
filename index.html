@@ -17,7 +17,6 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Hero Section */
         .hero {
             background: #007bff;
             color: white;
@@ -45,6 +44,7 @@
             max-width: 100%;
         }
 
+        
         .center-image {
             display: block;
             margin-left: auto;
@@ -84,16 +84,19 @@
             margin-top: 50px;
         }
 
+    
         img {
             max-width: 100%;
             height: auto;
         }
 
+        
         #Photos img {
             max-width: 100%;
             height: auto;
         }
 
+        
         @media (max-width: 768px) {
             .team-member img {
                 width: 100px;
@@ -104,50 +107,9 @@
                 padding: 5px 10px;
             }
         }
-
-        /* Fancy Button Styling */
-        .fancy-button {
-            display: inline-block;
-            padding: 12px 25px;
-            background: linear-gradient(135deg, #007bff, #00d4ff); /* Gradient background */
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-            border-radius: 50px; /* Rounded edges */
-            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4); /* Soft glow */
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .fancy-button:hover {
-            background: linear-gradient(135deg, #0056b3, #00b7eb); /* Darker gradient on hover */
-            color: #fff;
-            transform: translateY(-3px); /* Slight lift */
-            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6); /* Enhanced glow */
-        }
-
-        .fancy-button::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            transition: width 0.6s ease, height 0.6s ease;
-        }
-
-        .fancy-button:hover::before {
-            width: 300px;
-            height: 300px;
-        }
     </style>
 </head>
-<body>
+<body id="home">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="position: sticky; top: 0; z-index: 1000;">
         <div class="container">
             <a class="navbar-brand" href="#" style="color: white;">Geta Hospital Pharmacy</a>
@@ -156,7 +118,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
@@ -170,10 +132,12 @@
     <section class="hero">
         <header style="display: flex; align-items: center; justify-content: center; position: relative;">
             <img src="favicon.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+
             <h2 style="display: inline-block; font-size: 16px;">
                 नेपाल सरकार स्वास्थ्य तथा जनसंख्या मन्त्रालय
             </h2>
         </header>
+        <section id="home" class="container my-5"></section>
         <h1>Welcome to Geta Hospital Pharmacy</h1>
         <p>Your trusted pharmacy for quality healthcare products.</p>
     </section>
@@ -181,7 +145,7 @@
     <img src="getamedical.jpg" alt="Image" style="display: block; margin: 50px auto;">
 
     <h5 align="center">
-        <a href="https://getahospital.gov.np" target="_blank" class="fancy-button">CLICK here to visit official GETA HOSPITAL website</a>
+        <a href="https://getahospital.gov.np" target="_blank">CLICK here to visit official GETA HOSPITAL website</a>
     </h5>
 
     <section id="team" class="container my-5">
